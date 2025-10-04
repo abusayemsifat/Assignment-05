@@ -12,6 +12,11 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="hind-madurai-normal">
@@ -23,18 +28,15 @@
         </div>
 
         <div class="flex justify-between items-center gap-5">
-            <div
-                class="w-[123px] h-[52px] bg-[#41ff6b1a]  flex items-center justify-center gap-2 rounded-full">
+            <div class="w-[123px] h-[52px] bg-[#41ff6b1a]  flex items-center justify-center gap-2 rounded-full">
                 <h1 class="font-bold text-xl">0</h1>
                 <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
             </div>
-            <div
-                class="w-[123px] h-[52px] bg-[#41ff6b1a]  flex items-center justify-center gap-2 rounded-full">
+            <div class="w-[123px] h-[52px] bg-[#41ff6b1a]  flex items-center justify-center gap-2 rounded-full">
                 <h1 class="font-bold text-xl">100</h1>
                 <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
             </div>
-            <div
-                class="w-[123px] h-[52px] bg-[#00A63E]  flex items-center justify-center gap-2 rounded-full">
+            <div class="w-[123px] h-[52px] bg-[#00A63E]  flex items-center justify-center gap-2 rounded-full">
                 <h1 class="font-bold text-xl text-white">2 Copy</h1>
             </div>
 
@@ -42,13 +44,292 @@
     </div>
 
     <!-- banner -->
-     <div class="h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center">
+    <div class="h-[240px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex items-center justify-center">
         <div class="flex flex-col justify-center items-center">
             <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
             <h1 class="text-[40px] font-bold text-white text-center">Emergency Service Directory</h1>
-            <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <p class="text-white text-center">Government Emergency Services at Your Fingertip – A Project by Government
+                of the People’s Republic of Bangladesh</p>
         </div>
-     </div>
+    </div>
+
+    <!-- cards and call history -->
+    <div class="flex justify-center items-center bg-[#F5FFF6]">
+        <div class="w-[1800px] h-[1140px] mt-12 mb-12">
+            <div class="max-w-[1370px] grid grid-cols-3 gap-[30px]">
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">National Emergency Number</h1>
+                        <p class="text-[18px] text-gray-500">National Emergency</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">999</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">All</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/police.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Police Helpline Number</h1>
+                        <p class="text-[18px] text-gray-500">Police</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">999</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Police</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Fire Service Number</h1>
+                        <p class="text-[18px] text-gray-500">Fire Service</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">999</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Fire</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Ambulance Service</h1>
+                        <p class="text-[18px] text-gray-500">Ambulance</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">1994-999999</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Health</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Women & Child Helpline</h1>
+                        <p class="text-[18px] text-gray-500">Women & Child Helpline</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">109</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Help</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Anti-Corruption Helpline</h1>
+                        <p class="text-[18px] text-gray-500">Anti-Corruption</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">106</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Govt.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Electricity Helpline</h1>
+                        <p class="text-[18px] text-gray-500">Electricity Outage</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">16216</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Electricity</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Brac Helpline</h1>
+                        <p class="text-[18px] text-gray-500">Brac</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">16445</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">NGO</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <div class="w-[437px] h-[360px] p-8 shadow-md rounded-xl bg-white">
+                    <div class="flex items-center justify-between">
+                        <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex items-center justify-center">
+                            <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        </div>
+                        <i class="fa-regular fa-heart text-[24px] text-gray-500 cursor-pointer"></i>
+                    </div>
+
+                    <div class="mt-[16px]">
+                        <h1 class="text-2xl font-bold">Bangladesh Railway Helpline</h1>
+                        <p class="text-[18px] text-gray-500">Bangladesh Railway</p>
+                    </div>
+
+                    <div class="mt-[24px]">
+                        <h1 class="text-2xl font-bold">163</h1>
+                        <div class="bg-gray-100 max-w-fit py-[6px] px-4 rounded-full">
+                            <p class="text-[18px] text-gray-500">Travel</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-[24px] flex gap-2">
+                        <button
+                            class="text-gray-500 border-1 border-gray-300 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-950 hover:text-white hover:border-black duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+
+                        <button
+                            class="text-white bg-green-600 w-[183px] h-[40px] rounded-lg cursor-pointer hover:bg-gray-300 duration-150 active:scale-95 active:transition-none"><i
+                                class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
