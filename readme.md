@@ -5,7 +5,6 @@ Ans: getElementById selects the element based on the specific id and it returns 
 2. How do you create and insert a new element into the DOM?
 Ans: For example, to create and insert a paragraph tag ->
 
-js
 document.createElement("p")
 // if it is inside a div which has the id="div", to insert ->
 document.getElementById("div").appendChild("p")
