@@ -52,14 +52,14 @@ for (const call of calls) {
             const coinCount = getInnerTextNumber("coin-count")
 
             if (coinCount < 20) {
-                alert("You don't have enough coins. To call, you must have at least 20 coins.")
+                alert("❌ You don't have enough coins. To call, you must have at least 20 coins.")
                 return;
             }
 
             const title = this.parentNode.parentNode.querySelector(".title").innerText
             const number = this.parentNode.parentNode.querySelector(".number").innerText
 
-            alert("Calling " + title + " " + number + "...")
+            alert("📞 Calling " + title + " " + number + "...")
             const coinCountDecrease = coinCount - 20
             document.getElementById("coin-count").innerText = coinCountDecrease
 
