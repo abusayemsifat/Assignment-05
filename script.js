@@ -16,12 +16,28 @@ function setInnerText(value) {
 
 // heart
 const hearts = document.getElementsByClassName("heart-btn")
-for(const heart of hearts){
+for (const heart of hearts) {
     heart.addEventListener("click",
-        function(){
+        function () {
             const heartCount = getInnerTextNumber("heart-count")
-            const heartCountAdd = heartCount+1
+            const heartCountAdd = heartCount + 1
             document.getElementById("heart-count").innerText = heartCountAdd
+        }
+    )
+}
+
+// copy
+const copies = document.getElementsByClassName("copy-btn")
+for (const copy of copies) {
+    copy.addEventListener("click",
+        function () {
+            const copyCount = getInnerTextNumber("copy-count")
+            const copyCountInc = copyCount + 1
+            document.getElementById("copy-count").innerText = copyCountInc
+            const number = this.parentNode.parentNode.querySelector(".number").innerText
+
+            navigator.clipboard.writeText(number)
+            alert("This number is copied: " + number)
         }
     )
 }
@@ -30,12 +46,12 @@ for(const heart of hearts){
 
 const history = []
 const calls = document.getElementsByClassName("call-btn")
-for(const call of calls){
+for (const call of calls) {
     call.addEventListener("click",
-        function(){
+        function () {
             const coinCount = getInnerTextNumber("coin-count")
 
-            if(coinCount < 20){
+            if (coinCount < 20) {
                 alert("You don't have enough coins. To call, you must have at least 20 coins.")
                 return;
             }
@@ -56,8 +72,8 @@ for(const call of calls){
 
             historyContainer = document.getElementById("history-container")
             historyContainer.innerText = ""
-            
-            for(const data of history){
+
+            for (const data of history) {
                 const div = document.createElement("div")
                 div.innerHTML = `
                 <div class="bg-[#FAFAFA] h-[83px] rounded-lg flex justify-between items-center p-4">
@@ -76,7 +92,7 @@ for(const call of calls){
 
 // clear history
 document.getElementById("clear-btn").addEventListener("click",
-    function(){
+    function () {
         history.length = 0
         historyContainer.innerText = ""
     }
