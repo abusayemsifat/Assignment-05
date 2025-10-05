@@ -27,6 +27,8 @@ for(const heart of hearts){
 }
 
 // call
+
+const history = []
 const calls = document.getElementsByClassName("call-btn")
 for(const call of calls){
     call.addEventListener("click",
@@ -41,9 +43,41 @@ for(const call of calls){
             const title = this.parentNode.parentNode.querySelector(".title").innerText
             const number = this.parentNode.parentNode.querySelector(".number").innerText
 
-            alert("Calling " + title + " " + number)
+            alert("Calling " + title + " " + number + "...")
             const coinCountDecrease = coinCount - 20
             document.getElementById("coin-count").innerText = coinCountDecrease
+
+            const data = {
+                name: this.parentNode.parentNode.querySelector(".title").innerText,
+                number: this.parentNode.parentNode.querySelector(".number").innerText,
+                time: new Date().toLocaleTimeString('en-US')
+            }
+            history.unshift(data)
+
+            historyContainer = document.getElementById("history-container")
+            historyContainer.innerText = ""
+            
+            for(const data of history){
+                const div = document.createElement("div")
+                div.innerHTML = `
+                <div class="bg-[#FAFAFA] h-[83px] rounded-lg flex justify-between items-center p-4">
+                        <div>
+                            <h1 class="text-[18px] font-bold">${data.name}</h1>
+                            <p class="text-[18px] text-gray-500">${data.number}</p>
+                        </div>
+                        <p>${data.time}</p>
+                    </div>
+                `
+                historyContainer.appendChild(div)
+            }
         }
     )
 }
+
+// clear history
+document.getElementById("clear-btn").addEventListener("click",
+    function(){
+        history.length = 0
+        historyContainer.innerText = ""
+    }
+)
